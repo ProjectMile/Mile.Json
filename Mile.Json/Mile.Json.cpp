@@ -16,3 +16,21 @@ nlohmann::json Mile::Json::GetSubKey(
 {
     return RootKey.contains(KeyName) ? RootKey.at(KeyName) : nlohmann::json();
 }
+
+nlohmann::json Mile::Json::ToArray(
+    nlohmann::json const& Object)
+{
+    return Object.is_array() ? Object : nlohmann::json::array();
+}
+
+nlohmann::json Mile::Json::ToObject(
+    nlohmann::json const& Object)
+{
+    return Object.is_object() ? Object : nlohmann::json::object();
+}
+
+nlohmann::json Mile::Json::ToPrimitive(
+    nlohmann::json const& Object)
+{
+    return Object.is_primitive() ? Object : nlohmann::json();
+}
