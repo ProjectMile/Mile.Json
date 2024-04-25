@@ -9,3 +9,10 @@
  */
 
 #include "Mile.Json.h"
+
+nlohmann::json Mile::Json::GetSubKey(
+    nlohmann::json const& RootKey,
+    std::string const& KeyName)
+{
+    return RootKey.contains(KeyName) ? RootKey.at(KeyName) : nlohmann::json();
+}
