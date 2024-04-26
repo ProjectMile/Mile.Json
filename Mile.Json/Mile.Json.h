@@ -63,6 +63,68 @@ namespace Mile::Json
      */
     nlohmann::json ToPrimitive(
         nlohmann::json const& Object);
+
+    /**
+     * @brief Convert the JSON object to string without throwing exceptions.
+     * @param Object The source JSON object.
+     * @param Fallback The fallback value.
+     * @return Return the corresponding string if the source JSON object value
+     *         type is string, or the fallback string.
+     */
+    std::string ToString(
+        nlohmann::json const& Object,
+        std::string const& Fallback = std::string());
+
+    /**
+     * @brief Convert the JSON object to boolean value without throwing
+     *        exceptions.
+     * @param Object The source JSON object.
+     * @param Fallback The fallback value.
+     * @return Return the corresponding boolean value if the source JSON object
+     *         value type is boolean, or the fallback boolean value.
+     */
+    bool ToBoolean(
+        nlohmann::json const& Object,
+        bool const& Fallback = false);
+
+    /**
+     * @brief Convert the JSON object to signed integer value without throwing
+     *        exceptions.
+     * @param Object The source JSON object.
+     * @param Fallback The fallback value.
+     * @return Return the corresponding signed integer value if the source JSON
+     *         object value type is boolean, or the fallback signed integer
+     *         value.
+     */
+    std::int64_t ToInt64(
+        nlohmann::json const& Object,
+        std::int64_t const& Fallback = 0);
+
+    /**
+     * @brief Convert the JSON object to unsigned integer value without throwing
+     *        exceptions.
+     * @param Object The source JSON object.
+     * @param Fallback The fallback value.
+     * @return Return the corresponding unsigned integer value if the source
+     *         JSON object value type is boolean, or the fallback unsigned
+     *         integer value.
+     */
+    std::uint64_t ToUInt64(
+        nlohmann::json const& Object,
+        std::uint64_t const& Fallback = 0);
+
+    /**
+     * @brief Convert the JSON object to floating point value without throwing
+     *        exceptions.
+     * @param Object The source JSON object.
+     * @param Fallback The fallback value.
+     * @return Return the corresponding floating point value if the source JSON
+     *         object value type is boolean, or the fallback unsigned floating
+     *         point.
+     */
+    double ToDouble(
+        nlohmann::json const& Object,
+        double const& Fallback = 0.0);
 }
 
 #endif // !MILE_JSON
