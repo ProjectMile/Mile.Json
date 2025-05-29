@@ -1,5 +1,11 @@
 ﻿# Mile.Json Release Notes
 
+**Mile.Json 1.0.1057.0**
+
+- Update JSON for Modern C++ 3.12.0.
+- Migrate from Mile.Project.Windows to Mile.Project.Configurations.
+- Remove unnecessary maintainer tools projects.
+
 **Mile.Json 1.0.659.0**
 
 - Add Mile::Json::ToString.
