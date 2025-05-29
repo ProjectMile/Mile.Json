@@ -11,7 +11,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>Mile.Json</id>
-    <version>1.0.659.0</version>
+    <version>$version$</version>
     <description>The NuGet source code integration package version of JSON for Modern C++ with some utility functions</description>
     <authors>Kenji Mouri</authors>
     <projectUrl>https://github.com/ProjectMile/Mile.Json</projectUrl>
