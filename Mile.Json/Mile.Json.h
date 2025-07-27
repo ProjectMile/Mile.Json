@@ -1,9 +1,9 @@
 ﻿/*
- * PROJECT:   Mouri Internal Library Essentials
- * FILE:      Mile.Json.h
- * PURPOSE:   Definition for the Mile.Json
+ * PROJECT:    Mouri Internal Library Essentials
+ * FILE:       Mile.Json.h
+ * PURPOSE:    Definition for the Mile.Json
  *
- * LICENSE:   The MIT License
+ * LICENSE:    The MIT License
  *
  * MAINTAINER: MouriNaruto (Kenji.Mouri@outlook.com)
  */
